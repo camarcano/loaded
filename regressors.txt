@@ -1,0 +1,7 @@
+stack = StackingCVRegressor(regressors=(HuberRegressor(), 
+                            LassoCV(), LinearSVR()),
+                            meta_regressor=ARDRegression(), cv=10,
+                            use_features_in_secondary=True,
+                            store_train_meta_features=True,
+                            shuffle=False,
+                            random_state=1)
